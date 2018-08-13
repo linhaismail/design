@@ -9,12 +9,12 @@ import com.linhai.demo.design.factory_abstract.mapper.*;
  */
 public class AccessFactory implements DatabaseFactory{
     @Override
-    public UserMapper createUser() {
-        return new AccessUserMapper();
+    public IUser createUser() {
+        return new AccessIUser();
     }
 
     @Override
-    public DepartmentMapper createDepartment() {
-        return new AccessDepartmentMapper();
+    public IDepartment createDepartment() {
+        return new AccessIDepartment();
     }
 }

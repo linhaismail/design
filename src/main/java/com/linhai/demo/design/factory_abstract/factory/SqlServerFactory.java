@@ -1,9 +1,9 @@
 package com.linhai.demo.design.factory_abstract.factory;
 
-import com.linhai.demo.design.factory_abstract.mapper.DepartmentMapper;
-import com.linhai.demo.design.factory_abstract.mapper.SqlServerDepartmentMapper;
-import com.linhai.demo.design.factory_abstract.mapper.SqlServerUserMapper;
-import com.linhai.demo.design.factory_abstract.mapper.UserMapper;
+import com.linhai.demo.design.factory_abstract.mapper.IDepartment;
+import com.linhai.demo.design.factory_abstract.mapper.SqlServerIDepartment;
+import com.linhai.demo.design.factory_abstract.mapper.SqlServerIUser;
+import com.linhai.demo.design.factory_abstract.mapper.IUser;
 
 /**
  * @description: SqlServer工厂类
@@ -12,12 +12,12 @@ import com.linhai.demo.design.factory_abstract.mapper.UserMapper;
  */
 public class SqlServerFactory implements DatabaseFactory{
     @Override
-    public UserMapper createUser() {
-        return new SqlServerUserMapper();
+    public IUser createUser() {
+        return new SqlServerIUser();
     }
 
     @Override
-    public DepartmentMapper createDepartment() {
-        return new SqlServerDepartmentMapper();
+    public IDepartment createDepartment() {
+        return new SqlServerIDepartment();
     }
 }

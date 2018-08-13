@@ -1,4 +1,4 @@
-package com.linhai.demo.design.factory_abstract.mapper;
+package com.linhai.demo.design.factory_simple.mapper;
 
 import com.linhai.demo.design.factory_abstract.domain.Department;
 
@@ -7,7 +7,7 @@ import com.linhai.demo.design.factory_abstract.domain.Department;
  * @author: LinHai
  * @create: 2018-08-13 17:51
  */
-public interface DepartmentMapper {
+public interface IDepartment {
     void insert(Department department);
     Department getDepartment();
 }

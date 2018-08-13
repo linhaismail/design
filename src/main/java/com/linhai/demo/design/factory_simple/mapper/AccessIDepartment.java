@@ -1,4 +1,4 @@
-package com.linhai.demo.design.factory_abstract.mapper;
+package com.linhai.demo.design.factory_simple.mapper;
 
 import com.linhai.demo.design.factory_abstract.domain.Department;
 
@@ -7,7 +7,7 @@ import com.linhai.demo.design.factory_abstract.domain.Department;
  * @author: LinHai
  * @create: 2018-08-13 18:12
  */
-public class AccessDepartmentMapper implements DepartmentMapper {
+public class AccessIDepartment implements IDepartment {
     @Override
     public void insert(Department department) {
         System.out.println("在 Access 的 Department 表中插入一条数据");

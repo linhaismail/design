@@ -7,7 +7,7 @@ import com.linhai.demo.design.factory_abstract.domain.Department;
  * @author: LinHai
  * @create: 2018-08-13 18:14
  */
-public class SqlServerDepartmentMapper implements DepartmentMapper {
+public class SqlServerIDepartment implements IDepartment {
     @Override
     public void insert(Department department) {
         System.out.println("在 SQL Server 的 Department 表中插入一条数据");

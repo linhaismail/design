@@ -1,4 +1,4 @@
-package com.linhai.demo.design.factory_abstract.mapper;
+package com.linhai.demo.design.factory_simple.mapper;
 
 import com.linhai.demo.design.factory_abstract.domain.User;
 
@@ -7,7 +7,7 @@ import com.linhai.demo.design.factory_abstract.domain.User;
  * @author: LinHai
  * @create: 2018-08-13 17:24
  */
-public interface UserMapper {
+public interface IUser {
 
     void insert(User user);
 
