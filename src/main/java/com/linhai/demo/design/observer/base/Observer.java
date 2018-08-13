@@ -1,4 +1,4 @@
-package com.linhai.demo.design.observer;
+package com.linhai.demo.design.observer.base;
 
 /**
  * @description:    women
@@ -13,4 +13,6 @@ public abstract class Observer {
         this.name = name;
         this.sub = sub;
     }
+
+    public abstract void update();
 }
