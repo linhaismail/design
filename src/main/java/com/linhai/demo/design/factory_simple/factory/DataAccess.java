@@ -1,28 +1,20 @@
 package com.linhai.demo.design.factory_simple.factory;
 
-import com.linhai.demo.design.factory_abstract.mapper.IUser;
+import com.linhai.demo.design.factory_simple.mapper.IUser;
+import com.linhai.demo.design.factory_simple.mapper.SqlServerUser;
 
 /**
  * @program: design
- * @description: 简单工厂，加反射
+ * @description: 简单工厂，反射
  * @author: LinHai
  * @create: 2018-08-14 01:11
  */
 public class DataAccess {
-    private static final String db = "SqlServer";
 
-    public static IUser createDB() {
-        String assemblyDB = db + "User";
-        return null;
-    }
+    private static final String path = "com.linhai.demo.design.factory_simple.mapper";
 
-    public static void main(String[] args) {
-        try {
-            Class<?> aClass = Class.forName("com.linhai.demo.design.factory_simple.mapper." + db + "User");
-            String name = aClass.getName();
-            System.out.println(name);
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+    public static IUser createDB(String db) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
+        Class<?> aClass = Class.forName(path + "." + db + "User");
+        return (SqlServerUser) aClass.newInstance();
     }
 }

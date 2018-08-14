@@ -1,13 +1,12 @@
 package com.linhai.demo.design.factory_simple.mapper;
 
-import com.linhai.demo.design.factory_abstract.domain.User;
-
+import com.linhai.demo.design.factory_simple.domain.User;
 /**
  * @description: SqlServer数据库表操作对象
  * @author: LinHai
  * @create: 2018-08-13 17:33
  */
-public class SqlServerIUser implements IUser {
+public class SqlServerUser implements IUser {
 
     @Override
     public void insert(User user) {

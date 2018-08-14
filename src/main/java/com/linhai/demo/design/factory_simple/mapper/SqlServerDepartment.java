@@ -1,6 +1,6 @@
 package com.linhai.demo.design.factory_simple.mapper;
 
-import com.linhai.demo.design.factory_abstract.domain.Department;
+import com.linhai.demo.design.factory_simple.domain.Department;
 
 /**
  * @description: SQLServer 库 Department 表的数据操作

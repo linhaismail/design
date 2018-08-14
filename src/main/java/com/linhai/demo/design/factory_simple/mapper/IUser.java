@@ -1,6 +1,6 @@
 package com.linhai.demo.design.factory_simple.mapper;
 
-import com.linhai.demo.design.factory_abstract.domain.User;
+import com.linhai.demo.design.factory_simple.domain.User;
 
 /**
  * @description: User表的操作方法
