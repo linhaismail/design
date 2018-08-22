@@ -8,4 +8,18 @@ package com.linhai.demo.design.mediator.example;
  * @create: 2018-08-21 17:17
  */
 public class MainExample {
+
+    public static void main(String[] args) {
+
+        ConcreteMediator mediator = new ConcreteMediator();
+
+        ConcreteColleagueA colleagueA = new ConcreteColleagueA(mediator);
+        ConcreteColleagueB colleagueB = new ConcreteColleagueB(mediator);
+
+        mediator.colleagueA = colleagueA;
+        mediator.colleagueB = colleagueB;
+
+        colleagueA.send("how are you ?");
+        colleagueB.send("fine.");
+    }
 }
