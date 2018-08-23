@@ -7,5 +7,5 @@ package com.linhai.demo.design.flyweigth;
  */
 public abstract class WebSite {
 
-    public abstract void use();
+    public abstract void use(User user);
 }
